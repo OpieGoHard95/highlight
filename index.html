@@ -4,26 +4,30 @@
 Javascript Syntax Highlighter
 </title>
 <script type="text/javascript" src="js/highlightCode.js"></script>
+<script type="text/javascript" src="js/highlight.js"></script>
+
 
 <script type="text/javascript">
 var languages = {
   javascript: /\b(function|return|var)\b/g /* ... etc */
 };
 
-function highlightAllCode() {
-  var pres = document.body.getElementsByTagName("pre");
-  for (var i = 0; i < pres.length; i++) {
-    var pre = pres[i];
-    var lang = pre.getAttribute("data-language");
-    if (languages.hasOwnProperty(lang))
-      highlightCode(pre, languages[lang]);
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
 </script>
 </head>
 <body>
 <p>Here it is, the identity function:</p>
-<pre data-language="javascript">
+<pre data-language="javascript" class-proof="Jared Smith">
 function id(x) { return x; }
 </pre>
 
