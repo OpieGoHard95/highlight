@@ -28,7 +28,11 @@ Javascript Syntax Highlighter
 <body>
 <p>Here it is, the identity function:</p>
 <pre data-language="javascript" class-proof="Jared Smith">
-function id(x) { return x; }
+function id(x) { 
+for(var i = 0; i < 10; i++)
+if(i == 9)
+  break;
+return x; }
 </pre>
 
 <script>highlightAllCode();</script>
